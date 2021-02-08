@@ -1,5 +1,10 @@
 package main.java.pageEvents;
 
-public class LoginPageEvents {
+import main.java.Utils.ElementFetch;
 
+public class LoginPageEvents {
+    public void isLoginPageLoaded() {
+        ElementFetch elementFetch = new ElementFetch();
+
+    }
 }
