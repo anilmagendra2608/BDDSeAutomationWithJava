@@ -6,10 +6,9 @@
         </listener>
     </listeners>
     <test name="Test Automation">
-        <parameter name="browserName" value="chrome">
-        </parameter>
+        <parameter name ="browserName" value ="chrome"/>
         <classes>
-            <class name = "test.BaseTest"> </class>
+            <class name = "test.SampleTest"> </class>
         </classes>
     </test>
 </suite>

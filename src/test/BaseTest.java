@@ -70,15 +70,15 @@ public class BaseTest {
 
     public void setupDriver(String browserName){
         if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chromedriver.driver", "C:\\BDDSeAutomation\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
-            System.setProperty("webdriver.edge.driver", "C:\\BDDSeAutomation\\drivers\\msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\msedgedriver.exe");
             driver = new EdgeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             // ToDo : Firefox
         } else {
-            System.setProperty("webdriver.chromedriver.driver", "C:\\BDDSeAutomation\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chromedriver.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\chromedriver.exe");
             driver = new ChromeDriver();
         }
     }
