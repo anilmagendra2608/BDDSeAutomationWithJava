@@ -12,6 +12,7 @@ import main.java.Utils.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -31,7 +32,7 @@ public class BaseTest {
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setDocumentTitle("Automation Report");
         htmlReporter.config().setReportName("Automation Test Result");
-        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setTheme(Theme.STANDARD);
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Automation Tester", "Anil Magendra");
@@ -70,15 +71,15 @@ public class BaseTest {
 
     public void setupDriver(String browserName){
         if (browserName.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chromedriver.driver", "C:\\BDDSeAutomation\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
-            System.setProperty("webdriver.edge.driver", "C:\\BDDSeAutomation\\drivers\\msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\msedgedriver.exe");
             driver = new EdgeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             // ToDo : Firefox
         } else {
-            System.setProperty("webdriver.chromedriver.driver", "C:\\BDDSeAutomation\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chromedriver.driver", "C:\\My Local Repositories\\BDDSeAutomationWithJava\\drivers\\chromedriver.exe");
             driver = new ChromeDriver();
         }
     }
