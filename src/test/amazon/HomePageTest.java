@@ -13,5 +13,4 @@ public class HomePageTest extends BaseTest {
         homePageEvents.searchItem(Constants.searchText);
         homePageEvents.isSearchResultLoaded();
     }
-
 }

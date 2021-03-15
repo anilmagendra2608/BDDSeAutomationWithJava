@@ -3,7 +3,6 @@ package main.java.pageEvents;
 import main.java.Utils.ElementFetch;
 import main.java.pageObjects.HomePageElements;
 import main.java.pageObjects.LoginPageElements;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.testng.Assert;
 
 public class HomePageEvents {

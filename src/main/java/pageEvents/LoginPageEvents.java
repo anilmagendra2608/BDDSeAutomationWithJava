@@ -5,8 +5,6 @@ import main.java.Utils.ElementFetch;
 import main.java.pageObjects.LoginPageElements;
 import org.testng.Assert;
 
-import javax.xml.bind.Element;
-
 public class LoginPageEvents {
     public void isLoginPageLoaded() {
         ElementFetch elementFetch = new ElementFetch();
